@@ -1,0 +1,87 @@
+
+@font-face {
+    font-family: 'Sans';
+    src: url('Font.woff2') format('woff2');
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sans';
+}
+
+.header{
+    height: 100vh;
+    width: 100vw;
+   background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.938),
+    rgba(0, 0, 0, 0.589),
+    rgba(0, 0, 0, 0.938)
+  ),
+  url('/bg.jpg');
+  background-size: cover;       
+    background-repeat: no-repeat; 
+     display: flex;
+    flex-direction: column;
+}
+
+
+.header #Lang{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: #000000a8;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+.header nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 10vh;
+}
+.buttons{
+    background-color: rgb(221, 6, 6);
+    color: white;
+    width: 70px;
+    height: 30px;
+    border: 1px solid rgb(221, 6, 6);
+    border-radius: 5px;
+}
+.main1{
+    color: white;
+    height: 50vh; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5x;
+    align-items: center;
+}
+.main1>:first-child ,.main1>:nth-child(2){
+    font-size: 40px;
+    font-weight: 1000;
+}
+.main>:nth-child(4){
+    font-size: 90px;
+}
+
+.flex{
+    display: flex;
+    gap: 12px;
+}
+.button1{
+    width: 120px;
+    height: 30px;
+}
+
+input[id="start"]{
+width: 15vw;
+height: 5vh;
+background-color: rgba(24, 24, 24, 0.596);
+border: .5px solid rgb(172, 162, 162);
+border-radius: 5px;
+}
+
