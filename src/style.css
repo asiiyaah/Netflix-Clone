@@ -14,7 +14,7 @@
     width: 100vw;
    background-image:
   linear-gradient(
-    rgba(0, 0, 0, 0.938),
+    rgba(0, 0, 0, 0.795),
     rgba(0, 0, 0, 0.589),
     rgba(0, 0, 0, 0.938)
   ),
@@ -23,65 +23,92 @@
     background-repeat: no-repeat; 
      display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 .header #Lang{
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(117, 117, 117);
     border-radius: 5px;
     background-color: #000000a8;
     color: white;
     width: 100px;
     height: 30px;
 }
-.header nav{
+ nav{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 10vh;
+    gap: 30px;
+    padding-top: 25px;
 }
 .buttons{
     background-color: rgb(221, 6, 6);
     color: white;
     width: 70px;
     height: 30px;
-    border: 1px solid rgb(221, 6, 6);
-    border-radius: 5px;
+    border: .5px solid rgb(221, 6, 6);
+    border-radius: 3px;
 }
 .main1{
     color: white;
-    height: 50vh; 
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5x;
+    justify-content: flex-start;
+    height: 65vh;
+    width: 50vw;
+    gap: 5px;
+    line-height: 1;
     align-items: center;
 }
 .main1>:first-child ,.main1>:nth-child(2){
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 1000;
+    letter-spacing: .5px;
 }
-.main>:nth-child(4){
-    font-size: 90px;
+.main1 > :nth-child(4){
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .flex{
     display: flex;
     gap: 12px;
+    justify-content: flex-end;
+    width: 40vw;
 }
 .button1{
-    width: 120px;
-    height: 30px;
+    width: 180px;
+    font-size: 22px;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.5vh;
 }
 
 input[id="start"]{
-width: 15vw;
-height: 5vh;
+width: 26vw;
+height: 7vh;
+padding-left: 10px;
+color: white;
+font-size: 15px;
 background-color: rgba(24, 24, 24, 0.596);
-border: .5px solid rgb(172, 162, 162);
-border-radius: 5px;
+border: .5px solid rgb(117, 117, 117);
+border-radius: 3px;
 }
+
+.start{
+    display: flex;
+   align-items:center;
+   padding: 5px;
+    gap:7px;
+}
+
+
+
 
