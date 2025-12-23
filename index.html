@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <section class="header">
+   <section class="header">
     <nav>
       <span class="logo"><img src="/logo.svg" alt="NetFlix-Logo"></span>
       <div class="flex">
@@ -21,7 +21,7 @@
               d="M10.77 5.33 10.5 6 9.34 8.94l-.57 1.44L7.33 14h1.78l.73-1.97h3.58l.74 1.97H16l-3.43-8.67zm-.15 4.6-.24.63h2.51l-1.26-3.35zm-1.1-5.09.1-.19h-3.2V2h-1.5v2.65H.55V6h3.77A11 11 0 0 1 0 10.43c.33.28.81.8 1.05 1.16 1.5-.91 2.85-2.36 3.88-4.02v5.1h1.49V7.52q.6.95 1.33 1.8l.57-1.43a12 12 0 0 1-1.34-1.9h2.09z"
               clip-rule="evenodd"></path>
           </svg>
-          <select id="Lang">
+          <select class="Lang">
             <option value="English">English</option>
             <option value="Hindi">हिन्दी</option>
           </select>
@@ -32,12 +32,9 @@
 
 
     <div class="main1">
-      <span>Unlimited movies,</span>
-      <span> shows, and more</span>
-      <br>
-      <span>Starts at ₹149. Cancel at any time.</span>
-      <br>
-      <span>Ready to watch? Enter your email to create or restart your membership.</span>
+      <h1>Unlimited movies, shows, and more</h1>
+      <h2>Starts at ₹149. Cancel at any time.</h2>
+      <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
 
       <div class="start">
         <input id='start' type="email" placeholder="Email Address">
@@ -78,15 +75,23 @@
           <img src="delhi crime.webp" alt="DC">
           <h4 class="text">5</h4>
         </span>
-        <button class="next"><svg viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightMedium"
-            data-icon-id=":r5:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
-            <path fill="white" fill-rule="evenodd"
-              d="m15.586 12-7.293 7.293 1.414 1.414 8-8a1 1 0 0 0 0-1.414l-8-8-1.414 1.414z" clip-rule="evenodd"></path>
-          </svg></button>
+
+          <button class="next desktop"><svg viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightMedium"
+        data-icon-id=":r5:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+        <path fill="white" fill-rule="evenodd"
+          d="m15.586 12-7.293 7.293 1.414 1.414 8-8a1 1 0 0 0 0-1.414l-8-8-1.414 1.414z" clip-rule="evenodd"></path>
+      </svg></button>
       </div>
     </div>
+    <button class="next mobile"><svg viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightMedium"
+        data-icon-id=":r5:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+        <path fill="white" fill-rule="evenodd"
+          d="m15.586 12-7.293 7.293 1.414 1.414 8-8a1 1 0 0 0 0-1.414l-8-8-1.414 1.414z" clip-rule="evenodd"></path>
+      </svg></button>
   </section>
 
+
+  
   <section class="content2">
     <h2>More reasons to join</h2>
     <div class="boxes">
@@ -441,65 +446,75 @@
     </div>
   </section>
   <section class="FAQs">
-    <h2>Frequently Asked Questions</h2>
-    <div class="questions">
-      <button>What is Netflix? <svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
-          data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
-          xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
-          <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
-          </path>
-        </svg></button>
-      <button>How much does Netflix cost?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
-          data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
-          xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
-          <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
-          </path>
-        </svg></button>
-      <button>Where can I watch?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
-          data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
-          xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
-          <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
-          </path>
-        </svg></button>
-      <button>How do I cancel?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
-          data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
-          xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
-          <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
-          </path>
-        </svg></button>
-      <button>What can I watch on Netflix?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
-          data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
-          xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
-          <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
-          </path>
-        </svg></button></span>
-      <button>Is Netflix good for kids?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
-          data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
-          xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
-          <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
-          </path>
-        </svg></button>
+    <div class="faq-wrapper">
+      <h2>Frequently Asked Questions</h2>
+      <div class="questions">
+        <button>What is Netflix? <svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
+            data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
+            xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+            <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
+            </path>
+          </svg></button>
+        <button>How much does Netflix cost?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
+            data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
+            xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+            <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
+            </path>
+          </svg></button>
+        <button>Where can I watch?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
+            data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
+            xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+            <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
+            </path>
+          </svg></button>
+        <button>How do I cancel?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
+            data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
+            xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+            <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
+            </path>
+          </svg></button>
+        <button>What can I watch on Netflix?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
+            data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
+            xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+            <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
+            </path>
+          </svg></button></span>
+        <button>Is Netflix good for kids?<svg viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge"
+            data-icon-id=":Rjal6hlalailqp6:" aria-hidden="true" class="default-ltr-iqcdef-cache-1ulhx3w e1jjil14"
+            xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+            <path fill="currentColor" fill-rule="evenodd" d="M17 17V3h2v14h14v2H19v14h-2V19H3v-2z" clip-rule="evenodd">
+            </path>
+          </svg></button>
+      </div>
+
     </div>
   </section>
-
+ 
   <section class="end">
     <div class="end1">
+
       <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+
       <div class="start">
         <input id='start1' type="email" placeholder="Email Address">
-        <span class="start">
+
+        <span class="start3">
           <button class=" buttons button2">Get Started
+
             <svg viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightMedium" data-icon-id=":r4:"
               aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
               <path fill="currentColor" fill-rule="evenodd"
                 d="m15.59 12-7.3 7.3 1.42 1.4 8-8a1 1 0 0 0 0-1.4l-8-8-1.42 1.4z" clip-rule="evenodd"></path>
             </svg>
+
           </button>
         </span>
+
       </div>
+
     </div>
     <div class="end2">
-      <p>Questions? Call <a href="#">000-800-919-1743</a></p>
+      <span>Questions? Call <a href="#">000-800-919-1743</a></span>
       <div class=links>
         <ul>
           <li><a href="#">FAQ</a></li>
@@ -535,7 +550,7 @@
             d="M10.77 5.33 10.5 6 9.34 8.94l-.57 1.44L7.33 14h1.78l.73-1.97h3.58l.74 1.97H16l-3.43-8.67zm-.15 4.6-.24.63h2.51l-1.26-3.35zm-1.1-5.09.1-.19h-3.2V2h-1.5v2.65H.55V6h3.77A11 11 0 0 1 0 10.43c.33.28.81.8 1.05 1.16 1.5-.91 2.85-2.36 3.88-4.02v5.1h1.49V7.52q.6.95 1.33 1.8l.57-1.43a12 12 0 0 1-1.34-1.9h2.09z"
             clip-rule="evenodd"></path>
         </svg>
-        <select id="Lang">
+        <select class="Lang">
           <option value="English">English</option>
           <option value="Hindi">हिन्दी</option>
         </select>
@@ -545,6 +560,7 @@
     </div>
   </section>
 
+   
 
 
   <script type="module" src="/src/main.js"></script>

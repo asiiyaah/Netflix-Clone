@@ -18,20 +18,21 @@
 html,
 body {
     width: 100%;
-    height: 100%;
     box-sizing: border-box;
+    background-color: black;
 }
 
 .header {
     width: 100%;
     height: 100vh;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.795),
+        linear-gradient(rgba(0, 0, 0, 0.904),
             rgba(0, 0, 0, 0.589),
             rgba(0, 0, 0, 0.938)),
         url('/bg.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +41,7 @@ body {
 }
 
 
-#Lang {
+.Lang {
     background-color: #000000a8;
     color: white;
     border: none;
@@ -92,23 +93,33 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 65vh;
+    height: 50vh;
     width: 50vw;
-    gap: 5px;
+    gap: 20px;
     line-height: 1;
     align-items: center;
+    margin-top:15vh;
 }
 
-.main1>:first-child,
-.main1>:nth-child(2) {
-    font-size: 60px;
+.main1>h1 {
+    font-size: 53px;
     font-weight: 1000;
+    margin: 10px;
     letter-spacing: .5px;
 }
 
-.main1> :nth-child(4) {
-    font-size: 20px;
+.main1>h2 {
+    font-size: 31px;
+    font-weight: 1000;
+    letter-spacing: .5px;
+    margin: 10px;
+
+}
+
+.main1>h3 {
+    font-size: 15px;
     font-weight: 600;
+    margin: 10px;
 }
 
 .flex {
@@ -127,7 +138,7 @@ nav {
 }
 
 input[id="start"] {
-    width: 26vw;
+    width: 22vw;
     height: 7vh;
     padding-left: 10px;
     color: white;
@@ -139,9 +150,7 @@ input[id="start"] {
 
 .start {
     display: flex;
-    align-items: center;
-    padding: 5px;
-    gap: 3px;
+    gap: 7px;
 }
 
 .content1 {
@@ -151,10 +160,22 @@ input[id="start"] {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 50vh;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
 }
 
 .content {
     color: white;
+    position: absolute;
+
 }
 
 .content-items {
@@ -166,12 +187,11 @@ input[id="start"] {
 .content-items span {
     position: relative;
     transition: all .5s ease;
-
 }
 
 .content-items span img {
     border-radius: 30px;
-    width: 170px;
+    width: 230px;
     padding: 20px;
 
 }
@@ -195,6 +215,8 @@ input[id="start"] {
     height: 7.5rem;
     border: none;
     background: none;
+    position: absolute;
+    right: 0;
 
     svg {
         background-color: #1b1b1b;
@@ -214,18 +236,19 @@ input[id="start"] {
     justify-content: center;
     align-items: flex-start;
     color: white;
-    padding: 80px;
+    padding: 0 80px;
+    padding-bottom: 30px;
     background-color: black;
     gap: 10px;
 
     h2 {
-        padding-left: 100px;
+        padding-left: 0;
         font-size: 24px;
     }
 }
 
 .box {
-    width: calc(70%/4);
+    width: calc(100%/4);
     height: 45vh;
     border-radius: 20px;
     background-color: rgb(19, 19, 19);
@@ -265,14 +288,26 @@ input[id="start"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: black;
-    padding: 0 170px;
     gap: 15px;
+    position: relative;
 
     h2 {
         color: white;
+        font-size: 24px;
     }
+
+    .faq-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 15px;
+        padding: 20px 80px;
+        /* width: 100%; */
+    }
+
 }
 
 .questions {
@@ -280,15 +315,15 @@ input[id="start"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 9px;
 
     button {
-        width: 73vw;
-        height: 13vh;
+        width: 85vw;
+        height: 10vh;
         background-color: #252525;
         text-align: left;
-        padding: 0 20px;
-        font-size: 24px;
+        padding: 0 30px;
+        font-size: 28px;
         color: white;
         border: none;
         display: flex;
@@ -310,7 +345,7 @@ input[id="start"] {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 5px;
+        gap: 2px;
         align-items: center;
         line-height: 1.5;
     }
@@ -339,8 +374,8 @@ input[id="start"] {
 }
 
 input[id="start1"] {
-    width: 37vw;
-    height: 7vh;
+    width: 36vw;
+    height: 7.5vh;
     padding-left: 10px;
     color: white;
     font-size: 15px;
@@ -374,17 +409,189 @@ input[id="start1"] {
 }
 
 
-@media only screen and (max-width: 1024px) {
+/* 0-1024 */
+/* min-width: 1024px */
+/* 1024-infinity */
+/* 768px  - 1024px */
+
+
+@media only screen and (max-width: 960px) {
     nav {
         left: 0;
         transform: none;
         width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
         padding: 10px 18px;
         background-color: transparent;
+        margin-top: 10px;
+
+    }
+    .header{
+        height: 50vh;
+    }
+
+    .logo {
+        width: 6rem;
+        height: 2rem;
+        margin: 0;
+    }
+
+    .main1>h1 {
+        font-size: 33px;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: .75px;
+        margin: 10px;
+        width: 95vw;
+    }
+
+    .main1>h2 {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: .5px;
+        width: 90vw;
+        margin: 10px;
+    }
+
+    .main1>h3 {
+        font-size: 17px;
+        font-weight: 500;
+        width: 90vw;
+        margin: px;
+    }
+
+    .button {
+        width: 60vw;
+        font-size: 20px;
+        font-weight: 550;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+
+    }
+    input[id="start"] {
+            width: 90vw;
+            height: 5.5vh;
+        }
+
+    .main1 {
+        justify-content: flex-end;
+        align-items: center;
+        height: 30vh;
+    }
+
+    .content1 {
+        overflow: hidden;
+        .content{
+            left: 0;
+            padding: 30px;
+        }
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .end {
+        font-size: 2em;
+    }
+
+    .start {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        width: 100%;
+        padding: 0 25px;
+    }
+
+
+    .button1 {
+        height: 5vh
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        height: fit-content;
+        padding: 15px;
+    }
+
+    .content2 {
+        padding: 30px;
+
+        h2 {
+            padding: 0;
+        }
+    }
+
+    .FAQs {
+
+        button {
+            width: 85vw;
+            height: 8vh;
+            padding: 25px;
+            font-size: 18px;
+
+            svg {
+                width: 25px;
+                height: 30px;
+            }
+        }
+
+        h2 {
+            font-size: 18px;
+        }
 
     }
 
-    .logo {}
+    .end {
+        padding: 0;
+
+        .button2 {
+            height: 5.5vh;
+            width: 175px;
+            font-size: 20px;
+
+        }
+
+        input[id="start1"] {
+            width: 100%;
+            height: 5.5vh;
+        }
+
+
+        h5 {
+            padding: 0px 22px;
+        }
+        .end1{
+            padding:20px 0;
+        }
+        .end2 {
+            row-gap: 35px;
+            padding: 0;
+            font-size: 15px;
+            padding: 40px 25px;
+
+            .links {
+                flex-direction: column;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }
